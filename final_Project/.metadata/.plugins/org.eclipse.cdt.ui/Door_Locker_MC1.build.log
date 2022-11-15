@@ -1,0 +1,24 @@
+08:15:04 **** Build of configuration Debug for project Door_Locker_MC1 ****
+make all 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:10:
+../timer.h:24: error: expected specifier-qualifier-list before 'Timer1_Prescaler'
+../timer.h:44: warning: data definition has no type or storage class
+../timer.h:44: warning: type defaults to 'int' in declaration of 'ISR'
+../timer.h:44: warning: parameter names (without types) in function declaration
+In file included from ../lcd.c:11:
+e:/downloads/avr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_init':
+../lcd.c:23: warning: excess elements in struct initializer
+../lcd.c:23: warning: (near initialization for 'timer_config')
+../lcd.c:23: warning: excess elements in struct initializer
+../lcd.c:23: warning: (near initialization for 'timer_config')
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:180: warning: implicit declaration of function 'itoa'
+make: *** [lcd.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+08:15:05 Build Failed. 2 errors, 9 warnings. (took 532ms)
+

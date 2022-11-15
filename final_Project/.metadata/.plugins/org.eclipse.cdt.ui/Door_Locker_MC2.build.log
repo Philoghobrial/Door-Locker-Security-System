@@ -1,0 +1,16 @@
+07:26:36 **** Incremental Build of configuration Debug for project Door_Locker_MC2 ****
+make all 
+Building file: ../motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"motor.d" -MT"motor.o" -c -o "motor.o" "../motor.c"
+Finished building: ../motor.c
+ 
+Building target: Door_Locker_MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Door_Locker_MC2.map -mmcu=atmega32 -o "Door_Locker_MC2.elf"  ./MC2.o ./buzzer.o ./external_eeprom.o ./gpio.o ./motor.o ./timer.o ./twi.o ./uart.o   
+e:/downloads/avr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o:(.init9+0x0): undefined reference to `main'
+make: *** [Door_Locker_MC2.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+07:26:37 Build Failed. 2 errors, 0 warnings. (took 780ms)
+
